@@ -6,12 +6,12 @@ import {Table, Button, Container, Modal, ModalBody, ModalHeader, FormGroup, Moda
 import { render } from '@testing-library/react';
 
 const data = [
-  { id: 1, tipo: "Alimentario", producto: "Platano"},
-  { id: 2, tipo: "Oleaginoso", producto: "Girasol"},
-  { id: 3, tipo: "Industrial", producto: "Caucho"},
-  { id: 4, tipo: "Alimentario", producto: "Maiz"},
-  { id: 5, tipo: "Alimentario", producto: "Trigo"},
-  { id: 6, tipo: "Forraje", producto: "Cebada"},
+  { id: 1, tipo: "Alimentario", tiempo: "12 meses", terreno: "10 hectareas", producto: "Platano"},
+  { id: 2, tipo: "Oleaginoso", tiempo: "9 meses", terreno: "100 hectareas", producto: "Girasol"},
+  { id: 3, tipo: "Industrial", tiempo: "16 meses", terreno: "18 hectareas", producto: "Caucho"},
+  { id: 4, tipo: "Alimentario", tiempo: "8 meses", terreno: "40 hectareas", producto: "Maiz"},
+  { id: 5, tipo: "Alimentario", tiempo: "14 meses", terreno: "35 hectareas", producto: "Trigo"},
+  { id: 6, tipo: "Forraje", tiempo: "18 meses", terreno: "34 hectareas", producto: "Cebada"},
 
 ];
 
@@ -60,6 +60,12 @@ class App extends React.Component{
               Tipo
             </th>
             <th>
+              Tiempo
+            </th>
+            <th>
+              Area Asignada
+            </th>
+            <th>
               Producto
             </th>
             <th>Acciones</th>
@@ -70,6 +76,8 @@ class App extends React.Component{
             <tr>
               <td>{elemento.id}</td>
               <td>{elemento.tipo}</td>
+              <td>{elemento.tiempo}</td>
+              <td>{elemento.terreno}</td>
               <td>{elemento.producto}</td>
               <td><Button color="primary">Editar</Button>{"  "}
               <Button color="danger">eliminar</Button></td>
