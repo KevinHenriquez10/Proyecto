@@ -1,6 +1,47 @@
 .App {
   text-align: center;
 }
+.div-Header{
+  background-color: rgb(23, 78, 48);
+  border-radius: 10px;
+  color: white;
+  font-size: 25px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding-top: 10px;
+  height: 65px;
+}
+.div-texto1{
+  font-size: 25px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: darkgreen;
+  text-align: center;
+  width: 60%;
+}
+
+
+.div-textoBienvenida{
+  border-radius: 5px;
+  width: 60%;
+  color:black;
+  padding: 15px;
+  font-family: cursive;
+}
+
+
+.div-login{
+
+  width: 40%;
+  float: right;
+  text-align: center;
+  color: darkgreen;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.div-footer{
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
 
 .App-logo {
   height: 40vmin;
