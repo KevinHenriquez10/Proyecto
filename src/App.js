@@ -4,11 +4,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import icono from './assets/img/icono.png'
 import {Table, Button, Container, Modal, ModalBody, ModalHeader, FormGroup, ModalFooter}from 'reactstrap'
 import { render } from '@testing-library/react';
-import cultivo from './assets/img/cultivo.jpg'
 import caucho from './assets/img/caucho.jpg'
 import forraje from './assets/img/forraje.jpg'
 import oleoginoso from './assets/img/oleoginoso.jpg'
 import alimentario from './assets/img/alimentario.jpg'
+import { Registro } from './components/Registro';
 const data = [
   { id: 1, tipo: "Alimentario", tiempo: "12 meses", terreno: "10 hectareas", producto: "Platano"},
   { id: 2, tipo: "Oleaginoso", tiempo: "9 meses", terreno: "100 hectareas", producto: "Girasol"},
@@ -64,13 +64,14 @@ class App extends React.Component{
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."        
         </div>
         <div className="div-textoBienvenida">
-          <img src={cultivo} alt="" style={{width: "45%", marginRight: "15px", height: "150px", marginTop: "50px"}}/>
+          <img src={oleoginoso} alt="" style={{width: "45%", marginRight: "15px", height: "150px", marginTop: "50px"}}/>
           <img src={alimentario} alt="" style={{width: "45%", marginRight: "15px", height: "150px", marginTop: "50px"}}/>
           <img src={caucho} alt="" style={{width: "45%", marginRight: "15px", height: "150px", marginTop: "50px"}}/>
           <img src={forraje} alt="" style={{width: "45%", marginRight: "15px", height: "150px", marginTop: "50px"}}/>
         </div>
       </div>
     </Container>
+    {/*<Registro />*/}
     <Container>
       <footer>
         <div className="div-footer">
