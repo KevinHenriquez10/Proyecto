@@ -9,6 +9,8 @@ import forraje from './assets/img/forraje.jpg'
 import oleoginoso from './assets/img/oleoginoso.jpg'
 import alimentario from './assets/img/alimentario.jpg'
 import { Registro } from './components/Registro';
+import { VerUsuarios } from './components/VerUsuarios';
+import { EditarUsuario } from './components/EditarUsuario';
 const data = [
   { id: 1, tipo: "Alimentario", tiempo: "12 meses", terreno: "10 hectareas", producto: "Platano"},
   { id: 2, tipo: "Oleaginoso", tiempo: "9 meses", terreno: "100 hectareas", producto: "Girasol"},
@@ -40,7 +42,7 @@ class App extends React.Component{
       <div className="div-front">
         <div className="div-login">
           <div class="shadow p-3 mb-5 bg-body rounded">
-        iniciar sesion
+        Iniciar Sesión
           <form>
             <div class="form-floating mb-3" style={{paddingLeft: "15px", paddingRight: "15px"}}>
               <input type="text" class="form-control" id="usuario" placeholder="name@example.com"/>
@@ -72,11 +74,14 @@ class App extends React.Component{
       </div>
     </Container>
     {/*<Registro />*/}
+    <VerUsuarios/>
+    <Registro/>
+    <EditarUsuario/>
     <Container>
       <footer>
         <div className="div-footer">
           <hr></hr>
-          Dirección: Avenida siempre Viva-123
+          Dirección: Avenida Siempre Viva-123
           <br></br>
           Email: elredilsas@elredil.co
           <br></br>

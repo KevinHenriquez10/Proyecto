@@ -5,20 +5,29 @@ function VerUsuarios() {
     return(
         <>
         <Container>
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th scope="col">Id</th>
-                        <th scope="col">Nombre</th>
-                        <th scope="col">Rol</th>
-                        <th scope="col">opciones</th>
-                    </tr>
-                </thead>
+            <header>
+                <div className="div-Header">
+                        {/*<img src={icono} alt="" width="34px" height= "30px" />*/}
+                El Redil S.A.S
+                </div>
+            </header>
+            <hr></hr>
+        </Container>
+        <Container>
+        <table class="table">
+            <thead>
+                <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Rol</th>
+                <th scope="col">Opciones</th>
+                </tr>
+            </thead>
                 <tbody>
                     <tr>
                         <th scope="row">8900</th>
                         <td>Juan Pérez</td>
-                        <td>Admin</td>
+                        <td>Administrador</td>
                         <td>
                             <div class="btn-group" role="group" aria-label="Basic example">
                                 <button type="button" class="btn btn-primary">Editar</button>
@@ -29,7 +38,7 @@ function VerUsuarios() {
                     <tr>
                         <th scope="row">3040</th>
                         <td>María López</td>
-                        <td>Admin</td>
+                        <td>Administrador</td>
                         <td>
                             <div class="btn-group" role="group" aria-label="Basic example">
                                 <button type="button" class="btn btn-primary">Editar</button>
@@ -40,7 +49,7 @@ function VerUsuarios() {
                     <tr>
                         <th scope="row">8045</th>
                         <td>Eugenio Pérez</td>
-                        <td>Usuario Conf.</td>
+                        <td>Usuario Confidencial</td>
                         <td>
                             <div class="btn-group" role="group" aria-label="Basic example">
                                 <button type="button" class="btn btn-primary">Editar</button>
@@ -83,6 +92,21 @@ function VerUsuarios() {
                     </tr>
                 </tbody>
             </table>
+        </Container>
+        <Container>
+            <footer>
+                <div className="div-footer">
+                <hr></hr>
+                Dirección: Avenida Siempre Viva-123
+                <br></br>
+                Email: elredilsas@elredil.co
+                <br></br>
+                Tel: 035-3465526 
+                <br></br>
+                Cel: 301-4578856
+                <br></br>
+                </div>
+            </footer>
         </Container>
         </>
     );
