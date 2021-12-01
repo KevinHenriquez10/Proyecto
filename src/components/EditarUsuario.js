@@ -4,8 +4,10 @@ import { Container } from 'reactstrap';
 function EditarUsuario(){
     return(
         <>
-        <h1>Editar Usuario</h1>
         <Container>
+            <div className="div-texto1">
+               Editar Usuario
+            </div>
             <div className="div-editarUsuario">
                 <label htmlFor="Nombre">Nombre: </label>
                 <input type="text" placeholder="Nombre" id="form-registro-nombre" name="Nombre" />

@@ -3,8 +3,11 @@ import { Container } from 'reactstrap';
 
 function Registro () {
     return (
-        <>
+        <>  
         <Container>
+            <div className="div-texto1">
+               Registro
+            </div>
             <div className="div-registro">
                 <label htmlFor="Nombre">Nombre: </label>
                 <input type="text" placeholder="Nombre" id="form-registro-nombre" name="Nombre" />

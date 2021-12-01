@@ -5,6 +5,9 @@ function VerUsuarios() {
     return(
         <>
         <Container>
+            <div className="div-texto1">
+               Ver Usuarios
+            </div>
             <table class="table">
                 <thead>
                     <tr>
