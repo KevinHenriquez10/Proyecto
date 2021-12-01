@@ -5,10 +5,6 @@ function CultivosAsignados(){
     return(
         <>
         <Container>
-            <div className="div-texto1">
-               Cultivos Asignados
-            </div>
-
             <table class="table">
                 <thead>
                     <tr>
