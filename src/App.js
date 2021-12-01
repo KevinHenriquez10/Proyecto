@@ -74,9 +74,6 @@ class App extends React.Component{
       </div>
     </Container>
     {/*<Registro />*/}
-    <VerUsuarios/>
-    <Registro/>
-    <EditarUsuario/>
     <Container>
       <footer>
         <div className="div-footer">
@@ -92,6 +89,9 @@ class App extends React.Component{
         </div>
       </footer>
     </Container>
+    <VerUsuarios/>
+    <Registro/>
+    <EditarUsuario/>
   </>
   );
   }

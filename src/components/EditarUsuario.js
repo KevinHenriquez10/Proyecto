@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container } from 'reactstrap';
+import icono from '../assets/img/icono.png';
 
 function EditarUsuario(){
     return(
@@ -7,7 +8,7 @@ function EditarUsuario(){
         <Container>
         <header>
             <div className="div-Header">
-                    {/*<img src={icono} alt="" width="34px" height= "30px" />*/}
+                    <img src={icono} alt="" width="34px" height= "30px" />
             El Redil S.A.S
             </div>
         </header>

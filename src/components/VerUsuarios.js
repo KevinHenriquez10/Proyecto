@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container } from 'reactstrap';
+import icono from '../assets/img/icono.png';
 
 function VerUsuarios() {
     return(
@@ -7,7 +8,7 @@ function VerUsuarios() {
         <Container>
             <header>
                 <div className="div-Header">
-                        {/*<img src={icono} alt="" width="34px" height= "30px" />*/}
+                        <img src={icono} alt="" width="34px" height= "30px" />
                 El Redil S.A.S
                 </div>
             </header>
@@ -30,8 +31,8 @@ function VerUsuarios() {
                         <td>Administrador</td>
                         <td>
                             <div class="btn-group" role="group" aria-label="Basic example">
-                                <button type="button" class="btn btn-primary">Editar</button>
-                                <button type="button" class="btn btn-primary">Eliminar</button>
+                                <button type="button" class="btn btn-primary" style={{marginRight: "15px",  borderRadius: "5px"}} >Editar</button>
+                                <button type="button" class="btn btn-primary" style={{borderRadius: "5px"}}>Eliminar</button>
                             </div>
                         </td>
                     </tr>
