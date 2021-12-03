@@ -18,6 +18,7 @@ import { AsignarPermiso } from './components/AsignarPermiso';
 import { ConfiguracionParametro } from './components/ConfiguracionParametro';
 import { AsignarArea } from './components/AsignarArea';
 import { CultivosAsignados } from './components/CultivosAsignados';
+import { ConfiguracionPredio } from './components/ConfiguracionPredio';
 const data = [
   { id: 1, tipo: "Alimentario", tiempo: "12 meses", terreno: "10 hectareas", producto: "Platano"},
   { id: 2, tipo: "Oleaginoso", tiempo: "9 meses", terreno: "100 hectareas", producto: "Girasol"},
@@ -61,6 +62,7 @@ class App extends React.Component{
     <CrearTCultivo/>
     <ConfiguracionParametro/>
     <AsignarArea/>
+    <ConfiguracionPredio/>
      
   </>
   );
