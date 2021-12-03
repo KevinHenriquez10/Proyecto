@@ -8,6 +8,8 @@ function CultivosAsignados(){
         <>
         <Container>
             <Header />
+
+            <h3>Cultivos asignados</h3>
             <table class="table">
                 <thead>
                     <tr>

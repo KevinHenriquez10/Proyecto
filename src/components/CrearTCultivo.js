@@ -40,7 +40,7 @@ function CrearTCultivo(){
                 <input type="number" placeholder="Tiempo del cultivo" id="tiempo-cultivo" name="TiempoCultivo" />
                 <br/>
                 <br/>
-                <label for="CantidadAgua">Cantidad de agua(metros cubicos): </label>
+                <label for="CantidadAgua">Cantidad de agua(m<sup>3</sup>): </label>
                 <input type="number" placeholder="Cantidad de agua" id="cantidad-agua" name="CantidadAgua" />
                 <br/>
                 <br/>
