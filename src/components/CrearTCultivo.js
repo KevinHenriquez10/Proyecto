@@ -1,11 +1,16 @@
 import React from 'react';
 import { Container } from 'reactstrap';
+import {Header} from '../components/header'
+import {Footer} from '../components/footer'
 
 function CrearTCultivo(){
     return(
         <>
-        <h3>Usuario de configuración</h3>
+        
         <Container>
+            <Header />
+
+            <h3>Usuario de configuración</h3>
             <div>
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
                         <div class="container-fluid">
@@ -55,6 +60,8 @@ function CrearTCultivo(){
                 <button type="button" class="btn btn-primary">Ver cultivos</button>
                 <button type="button" class="btn btn-primary">Cancelar</button>
             </div>
+
+            <Footer />
         </Container>
         </>
     )

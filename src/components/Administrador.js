@@ -1,11 +1,16 @@
 import React from 'react';
 import { Container } from 'reactstrap';
+import {Header} from '../components/header'
+import {Footer} from '../components/footer'
 
 function Administrador(){
     return(
         <>
-        <h3>Administrador</h3>
+        
         <Container>
+            <Header />
+
+            <h3>Administrador</h3>
             <ul class="nav flex-column">
                 <li class="nav-item">
                     <a class="nav-link" href="/">Ver Usuarios</a>
@@ -41,6 +46,8 @@ function Administrador(){
                     <a class="nav-link" href="/">Recolección de cultivo</a>
                 </li>
             </ul>
+
+            <Footer />
         </Container>
         </>
     )

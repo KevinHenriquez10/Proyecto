@@ -1,11 +1,15 @@
 import React from 'react';
 import { Container } from 'reactstrap';
+import {Header} from '../components/header'
+import {Footer} from '../components/footer'
 
 function AsignarPermiso(){
     return(
         <>
         <h3>Registro usuario</h3>
         <Container>
+            <Header />
+
             <div><h4>Asignar permisos</h4></div><br/>
             <div>
                 <label for="Buscar">Permisos: </label><br/>
@@ -21,6 +25,7 @@ function AsignarPermiso(){
                 
             </div>
 
+            <Footer />
         </Container>
         </>
     )
