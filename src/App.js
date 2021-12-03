@@ -13,6 +13,7 @@ import { Bienvenida } from './components/section-Bienvenida';
 import { RegistroPredio } from './components/RegistroPredio';
 import { AsignacionPredio } from './components/AsignacionPredio';
 import { Administrador } from './components/Administrador';
+import { CrearTCultivo } from './components/CrearTCultivo';
 const data = [
   { id: 1, tipo: "Alimentario", tiempo: "12 meses", terreno: "10 hectareas", producto: "Platano"},
   { id: 2, tipo: "Oleaginoso", tiempo: "9 meses", terreno: "100 hectareas", producto: "Girasol"},
@@ -43,7 +44,7 @@ class App extends React.Component{
     </Container>
     {/*<Registro />*/}
     <Container>
-      <Footer />
+    <Footer />
     </Container>
     <VerUsuarios/>
     <Registro/>
@@ -51,6 +52,8 @@ class App extends React.Component{
     <RegistroPredio/>
     <AsignacionPredio/>
     <Administrador/>
+    <CrearTCultivo/>
+    
     
   </>
   );

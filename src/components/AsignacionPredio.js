@@ -6,7 +6,7 @@ function AsignacionPredio(){
         <>
         <h3>Usuario de configuración</h3>
         <Container>
-        <div>
+            <div>
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <div class="container-fluid">
                         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
