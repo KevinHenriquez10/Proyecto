@@ -1,17 +1,13 @@
 import React from 'react';
 import { Container } from 'reactstrap';
-import icono from '../assets/img/icono.png';
+import {Header} from '../components/header'
+import {Footer} from '../components/footer'
 
 function EditarUsuario(){
     return(
         <>
         <Container>
-        <header>
-            <div className="div-Header">
-                    <img src={icono} alt="" width="34px" height= "30px" />
-            El Redil S.A.S
-            </div>
-        </header>
+        <Header />
         <hr></hr>
         </Container>
         <Container>
@@ -103,19 +99,7 @@ function EditarUsuario(){
                     
         </Container>
         <Container>
-            <footer>
-                <div className="div-footer">
-                <hr></hr>
-                Dirección: Avenida Siempre Viva-123
-                <br></br>
-                Email: elredilsas@elredil.co
-                <br></br>
-                Tel: 035-3465526 
-                <br></br>
-                Cel: 301-4578856
-                <br></br>
-                </div>
-            </footer>
+            <Footer />
             </Container>
         </>
     )

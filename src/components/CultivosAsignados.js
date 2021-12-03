@@ -1,10 +1,13 @@
 import React from 'react';
 import { Container } from 'reactstrap';
+import {Header} from '../components/header'
+import {Footer} from '../components/footer'
 
 function CultivosAsignados(){
     return(
         <>
         <Container>
+            <Header />
             <table class="table">
                 <thead>
                     <tr>
@@ -74,6 +77,7 @@ function CultivosAsignados(){
                     </tr>
                 </tbody>
             </table>
+            <Footer />
         </Container>
         </>
     )
