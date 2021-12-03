@@ -10,6 +10,9 @@ import { Header } from './components/header';
 import { Footer } from './components/footer';
 import {Login} from './components/login'
 import { Bienvenida } from './components/section-Bienvenida';
+import { RegistroPredio } from './components/RegistroPredio';
+import { AsignacionPredio } from './components/AsignacionPredio';
+import { Administrador } from './components/Administrador';
 const data = [
   { id: 1, tipo: "Alimentario", tiempo: "12 meses", terreno: "10 hectareas", producto: "Platano"},
   { id: 2, tipo: "Oleaginoso", tiempo: "9 meses", terreno: "100 hectareas", producto: "Girasol"},
@@ -45,6 +48,10 @@ class App extends React.Component{
     <VerUsuarios/>
     <Registro/>
     <EditarUsuario/>
+    <RegistroPredio/>
+    <AsignacionPredio/>
+    <Administrador/>
+    
   </>
   );
   }
