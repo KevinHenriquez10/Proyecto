@@ -40,8 +40,8 @@ function AsignarArea(){
                 <input type="text" placeholder="Producto" id="producto" name="Producto" />
                 <br/>
                 <br/>
-                <label for="AsignarArea">Asignar área (m<sup>2</sup>): </label>
-                <input type="number" placeholder="Asignar área" id="asignar-area" name="AsignarArea" />
+                <label for="AreaAsignada">Área asignada (m<sup>2</sup>): </label>
+                <input type="number" placeholder="Área asignada" id="area-asignada" name="AreaAsignada" />
                 <br/>
                 <br/>
                 <label for="CantidadSemilla">Cantidad de semilla (kg): </label>
@@ -64,7 +64,7 @@ function AsignarArea(){
                 <input type="number" placeholder="Kilogramos recogidos" id="kg-recogido" name="KgRecogido" />
                 <br/>
                 <br/>
-                <label for="TiempoEspera">Tiempo de espera (en meses): </label>
+                <label for="TiempoEspera">Tiempo de espera (en semanas): </label>
                 <input type="number" placeholder="Tiempo de espera" id="tiempo-espera" name="TiempoEspera" />
                 <br/>
                 <br/>
