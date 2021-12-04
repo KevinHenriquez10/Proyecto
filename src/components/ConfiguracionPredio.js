@@ -27,7 +27,7 @@ function ConfiguracionPredio(){
             <div><h4>Configuración de predio</h4></div><br/>
 
             <div>
-                <table class="table">
+                <table class="table table-bordered">
                     <thead>
                         <tr>
                         <th scope="col">Id</th>
@@ -117,8 +117,7 @@ function ConfiguracionPredio(){
                 <br/>
                 <button type="button" class="btn btn-primary">Guardar cambios</button>
                 <button type="button" class="btn btn-primary">Cancelar</button>
-            </Container
-            >
+            </Container>
 
             <Footer />
         </Container>
