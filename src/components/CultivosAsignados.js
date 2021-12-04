@@ -9,7 +9,7 @@ function CultivosAsignados(){
         <Container>
             <Header />
 
-            <h3>Cultivos asignados</h3>
+            <h3>Cultivos Asignados</h3>
             <table class="table">
                 <thead>
                     <tr>
@@ -17,8 +17,8 @@ function CultivosAsignados(){
                         <th scope="col">Tipo</th>
                         <th scope="col">Producto</th>
                         <th scope="col">Área m2</th>
-                        <th scope="col">Fecha siembra</th>
-                        <th scope="col">Fecha recolección</th>
+                        <th scope="col">Fecha Siembra</th>
+                        <th scope="col">Fecha Recolección</th>
                         <th scope="col">Asignado</th>
                     </tr>
                 </thead>

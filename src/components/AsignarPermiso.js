@@ -6,7 +6,6 @@ import {Footer} from '../components/footer'
 function AsignarPermiso(){
     return(
         <>
-        <h3>Registro usuario</h3>
         <Container>
             <Header />
 
