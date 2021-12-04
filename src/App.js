@@ -20,6 +20,7 @@ import { AsignarArea } from './components/AsignarArea';
 import { CultivosAsignados } from './components/CultivosAsignados';
 import { ConfiguracionPredio } from './components/ConfiguracionPredio';
 import { Costos } from './components/Costos';
+import { Recogida } from './components/Recogida';
 const data = [
   { id: 1, tipo: "Alimentario", tiempo: "12 meses", terreno: "10 hectareas", producto: "Platano"},
   { id: 2, tipo: "Oleaginoso", tiempo: "9 meses", terreno: "100 hectareas", producto: "Girasol"},
@@ -65,6 +66,7 @@ class App extends React.Component{
     <AsignarArea/>
     <ConfiguracionPredio/>
     <Costos/>
+    <Recogida/>
      
   </>
   );
