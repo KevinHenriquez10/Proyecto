@@ -47,7 +47,6 @@ function Recogida(){
                             <td><input type="date" id="fecha-final" name="Fechafinal"></input></td>
                             <td><input type="date" id="estimacion-recoleccion" name="EstimacionRecoleccion"></input></td>
                         </tr>
-
                         <tr>
                             <td>209</td>
                             <td>Fruta</td>
