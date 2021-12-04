@@ -11,7 +11,7 @@ function VerUsuarios() {
             <hr></hr>
         </Container>
         <Container>
-        <table class="table">
+        <table class="table table-bordered">
             <thead>
                 <tr>
                 <th scope="col">Id</th>

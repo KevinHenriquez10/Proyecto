@@ -100,7 +100,7 @@ function ConfiguracionPredio(){
                 <br/>
                 <br/>
                 <label for="KgRecogido">Kilogramos recogidos: </label>
-                <input type="number" placeholder="Kilogramos recogidos" id="kg-recogido" name="KgRecogido" />
+                <input type="number" id="kg-recogido" name="KgRecogido" />
                 <br/>
                 <br/>
                 <label for="TiempoEspera">Tiempo de espera (en semanas): </label>

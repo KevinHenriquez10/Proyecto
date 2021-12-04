@@ -10,7 +10,7 @@ function CultivosAsignados(){
             <Header />
 
             <h3>Cultivos Asignados</h3>
-            <table class="table">
+            <table class="table table-bordered">
                 <thead>
                     <tr>
                         <th scope="col">Id</th>
