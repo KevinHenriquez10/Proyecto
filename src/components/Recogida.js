@@ -8,23 +8,25 @@ function Recogida(){
         <>
         <Container>
             <Header />
+            <hr></hr>
             <h3>Usuario de gestión</h3>
             <div>
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <div class="container-fluid">
                         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                             <div class="navbar-nav">
-                                <a class="nav-link" href="/">Asignar Área</a>
-                                <a class="nav-link" href="/">Configuración de predio</a>
-                                <a class="nav-link" href="/">Costos</a>
-                                <a class="nav-link" href="/">Recogida</a>  
+                                <a class="nav-link" href="/">Inicio</a>
+                                <a class="nav-link" href="/usuarioGestion/asignarArea">Asignar Área</a>
+                                <a class="nav-link" href="/usuarioGestion/configuracionPredio">Configuración de predio</a>
+                                <a class="nav-link" href="/usuarioGestion/costos">Costos</a>
+                                <a class="nav-link" href="/usuarioGestion/recogida">Recogida</a>  
                             </div>
                         </div>
                     </div>
                 </nav>
             </div>
 
-            <div><h4>Recogida</h4></div><br/>
+            <div><h4 style={{textAlign:"center"}}>Recogida</h4></div><br/>
 
             <div>
                 <table class="table table-bordered">

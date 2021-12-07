@@ -10,16 +10,18 @@ function AsignacionPredio(){
         
         <Container>
             <Header />
+            <hr></hr>
             <h3>Usuario de configuración</h3>
             <div>
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <div class="container-fluid">
                         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                             <div class="navbar-nav">
-                                <a class="nav-link" href="/">Registro</a>
-                                <a class="nav-link" href="/">Asignación</a>
-                                <a class="nav-link" href="/">Crear tipo cultivo</a>
-                                <a class="nav-link" href="/">Configuración de parámetros</a>  
+                                <a class="nav-link" href="/">Inicio</a>
+                                <a class="nav-link" href="/usuarioConfiguracion/registro">Registro</a>
+                                <a class="nav-link" href="/usuarioConfiguracion/asignacionPredio">Asignación</a>
+                                <a class="nav-link" href="/usuarioConfiguracion/crearCultivo">Crear tipo cultivo</a>
+                                <a class="nav-link" href="/usuarioConfiguracion/parametro">Configuración de parámetros</a>  
                             </div>
                         </div>
                     </div>
@@ -34,7 +36,7 @@ function AsignacionPredio(){
                                     <div class="row justify-content-center">
                                         <div class="col-lg-7">
                                             <div class="card shadow-lg border-0 rounded-lg mt-5">
-                                                <div class="card-header"><h3 class="text-center font-weight-light my-4">Registrar Asignación de Predio</h3></div>
+                                                <div class="card-header"><h3 class="text-center font-weight-light my-4">Asignación de Predio</h3></div>
                                                 <div class="card-body">
                                                     <form>
                                                     <div class="row mb-3">

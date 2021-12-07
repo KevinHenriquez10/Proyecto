@@ -1,7 +1,8 @@
 import React from 'react';
 import { Container } from 'reactstrap';
-import {Header} from '../components/header'
-import {Footer} from '../components/footer'
+import {Header} from '../components/header';
+import {Footer} from '../components/footer';
+import {Link} from 'react-router-dom';
 
 
 function RegistroPredio(){
@@ -9,17 +10,18 @@ function RegistroPredio(){
         <>
         <Container>
             <Header />
-
+            <hr></hr>
             <h2>Usuario de Configuración</h2>
             <div>
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <div class="container-fluid">
                         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                             <div class="navbar-nav">
-                                <a class="nav-link" href="/">Registro</a>
-                                <a class="nav-link" href="/">Asignación</a>
-                                <a class="nav-link" href="/">Crear Tipo Cultivo</a>
-                                <a class="nav-link" href="/">Configuración de Parámetros</a>  
+                                <a class="nav-link" href="/">Inicio</a> 
+                                <a class="nav-link" href="/usuarioConfiguracion/registro">Registro</a>
+                                <a class="nav-link" href="/usuarioConfiguracion/asignacionPredio">Asignación</a>
+                                <a class="nav-link" href="/usuarioConfiguracion/crearCultivo">Crear Tipo Cultivo</a>
+                                <a class="nav-link" href="/usuarioConfiguracion/parametro">Configuración de Parámetros</a> 
                             </div>
                         </div>
                     </div>

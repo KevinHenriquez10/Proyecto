@@ -14,7 +14,7 @@ function Login (){
                 <input type="password" class="form-control" id="password" placeholder="Password"/>
                 <label for="password" style={{paddingLeft: "25px"}}>Password</label>
                 <button type="button" class="btn btn-primary" style={{ float: 'left', marginTop: '15px', marginRight: '15px',  width: '100%'}}>Ingresar</button>
-                <button type="button" class="btn btn-primary" style={{ marginTop: '15px', width: '100%'}}>Registrate</button>
+                <br></br>
                 <br></br>
                 <p style={{marginTop: '20px'}}>Olvidaste tu contraseña?</p>
                 </div>

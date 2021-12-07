@@ -41,9 +41,18 @@ class App extends React.Component{
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />}/>
+        <Route path="/administrador" element={<Administrador />}/>
+        <Route path="/usuarioConfiguracion/parametro" element={<ConfiguracionParametro />}/>
+        <Route path="/usuarioConfiguracion/asignacionPredio" element={<AsignacionPredio />}/>
+        <Route path="/usuarioConfiguracion/registro" element={<RegistroPredio />}/>
+        <Route path="/usuarioConfiguracion/crearCultivo" element={<CrearTCultivo />}/>
+        <Route path="/usuarioGestion/asignarArea" element={<AsignarArea />}/>
+        <Route path="/usuarioGestion/configuracionPredio" element={<ConfiguracionPredio />}/>
+        <Route path="/usuarioGestion/costos" element={<Costos />}/>
+        <Route path="/usuarioGestion/recogida" element={<Recogida />}/>
+        <Route path="/verCultivos" element={<CultivosAsignados />}/>
         <Route path="/usuarios" element={<VerUsuarios />}/>
         <Route path="/administrador/registro" element={<Registro />}/>
-        <Route path="/crearCultivo" element={<CrearTCultivo />}/>
         <Route path="/cultivos" element={<CultivosAsignados />}/>
       </Routes>
     </BrowserRouter>

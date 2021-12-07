@@ -11,10 +11,9 @@ function Home() {
         <Container>
         <Header />
         <hr></hr>
-        <Link to="/usuarios">Usuarios |</Link>
-        <Link to="/administrador/registro"> Registro |</Link>
-        <Link to="/crearCultivo"> Crear Cultivos |</Link>
-        <Link to="/cultivos"> Ver Cultivos |</Link>
+        <Link to="/administrador"> Administrador |</Link>
+        <Link to="/usuarioConfiguracion/registro"> Usuario de Configuración |</Link>
+        <Link to="/usuarioGestion/asignarArea"> Usuario de Gestión</Link> 
         <div className="div-front">
         <Login />
         <Bienvenida />        
