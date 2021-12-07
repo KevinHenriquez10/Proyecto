@@ -10,7 +10,8 @@ function Home() {
         <>
         <Container>
         <Header />
-        <Link to="/usuarios">Usuarios</Link>
+        <Link to="/usuarios">Usuarios </Link>
+        <Link to="/administrador/registro">Registro</Link>
         <hr></hr>
         <div className="div-front">
         <Login />
