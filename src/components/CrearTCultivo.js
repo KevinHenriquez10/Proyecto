@@ -1,15 +1,63 @@
-import React from 'react';
+import React, {useState, useRef} from 'react';
 import { Container } from 'reactstrap';
-import {Header} from '../components/header'
-import {Footer} from '../components/footer'
+import {Header} from '../components/header';
+import {Footer} from '../components/footer';
+import {Link} from 'react-router-dom';
+
 
 function CrearTCultivo(){
+    
+        let cultivos=[];
+        const areaDest = useRef();
+        const canSem = useRef();
+        const tCultivo = useRef();
+        const canAgua = useRef();
+        const canFert = useRef();
+        const tReco = useRef();
+        const canReco = useRef();
+        const tipCultivo = useRef();
+        const [success, setSuccess] = useState();
+        const guardarCultivo = () => {
+            const tipoCultivo = tipCultivo.current.value;
+            const area = areaDest.current.value;
+            const canSemillas = canSem.current.value;
+            const tiempoCultivo = tCultivo.current.value;
+            const cantAgua = canAgua.current.value;
+            const cantFertilizante = canFert.current.value;
+            const tiempoRecoleccion = tReco.current.value;
+            const cantRecoleccion = canReco.current.value;
+            const cultivo = {
+                "Área": area,
+                "Cantidad_Semillas": canSemillas,
+                "Tiempo_de_Cultivo": tiempoCultivo,
+                "Cantidad_Agua": cantAgua,
+                "Cantidad_Fertilizante": cantFertilizante,
+                "Tiempo_Recoleccion": tiempoRecoleccion,
+                "Cantidad_Recoleccion": cantRecoleccion,
+                "Tipo_Cultivo": tipoCultivo
+            }
+            cultivos = JSON.parse(localStorage.getItem("listaCultivos")) || [];
+            cultivos.push(cultivo);
+            localStorage.setItem("listaCultivos", JSON.stringify(cultivos));
+            areaDest.current.value="";
+            canSem.current.value="";
+            tCultivo.current.value="";
+            canAgua.current.value="";
+            canFert.current.value="";
+            tReco.current.value="";
+            canReco.current.value="";
+            setSuccess(true);
+            setTimeout(() => setSuccess(false), 3000);
+        };
     return(
         <>
-        
+        {success && <div className="alert alert-success" role="alert">
+            Guardado con exito
+        </div>}
         <Container>
             <Header />
-
+            <hr></hr>
+            <Link to="/">Home</Link>
             <h3>Usuario de configuración</h3>
             <div>
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -40,13 +88,13 @@ function CrearTCultivo(){
                                                         <div class="row mb-3">
                                                             <div class="col-md-6">
                                                                 <div class="form-floating mb-3 mb-md-0">
-                                                                    <input class="form-control" id="areaDestinada" type="text" placeholder="Ingrese el area destinada" />
+                                                                    <input class="form-control" id="areaDestinada" type="text" placeholder="Ingrese el area destinada" ref={areaDest}/>
                                                                     <label for="inputArea1">Área Destinada</label>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-6">
                                                                 <div class="form-floating">
-                                                                    <input class="form-control" id="apellidoUsuario" type="text" placeholder="Ingrese el apellido del usuario" />
+                                                                    <input class="form-control" id="apellidoUsuario" type="text" placeholder="Ingrese el apellido del usuario" ref={canSem} />
                                                                     <label for="inputNombre">Cantidad de Semilla por Hectarea</label>
                                                                 </div>
                                                             </div>
@@ -54,13 +102,13 @@ function CrearTCultivo(){
                                                         <div class="row mb-3">
                                                             <div class="col-md-6">
                                                                 <div class="form-floating mb-3 mb-md-0">
-                                                                    <input class="form-control" id="areaDestinada" type="text" placeholder="Ingrese el area destinada" />
+                                                                    <input class="form-control" id="areaDestinada" type="text" placeholder="Ingrese el area destinada" ref ={tCultivo}/>
                                                                     <label for="inputArea1">Tiempo del Cultivo (semanas)</label>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-6">
                                                                 <div class="form-floating">
-                                                                    <input class="form-control" id="apellidoUsuario" type="text" placeholder="Ingrese el apellido del usuario" />
+                                                                    <input class="form-control" id="apellidoUsuario" type="number" placeholder="Ingrese el apellido del usuario" ref={canAgua} />
                                                                     <label for="inputNombre">Cantidad de Agua (m<sup>3</sup>)</label>
                                                                 </div>
                                                             </div>
@@ -68,13 +116,13 @@ function CrearTCultivo(){
                                                         <div class="row mb-3">
                                                             <div class="col-md-6">
                                                                 <div class="form-floating mb-3 mb-md-0">
-                                                                    <input class="form-control" id="areaDestinada" type="text" placeholder="Ingrese el area destinada" />
+                                                                    <input class="form-control" id="areaDestinada" type="number" placeholder="Ingrese el area destinada" ref={canFert} />
                                                                     <label for="inputArea1">Kg de Fertilizante por Hectarea</label>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-6">
                                                                 <div class="form-floating">
-                                                                    <input class="form-control" id="apellidoUsuario" type="text" placeholder="Ingrese el apellido del usuario" />
+                                                                    <input class="form-control" id="apellidoUsuario" type="text" placeholder="Ingrese el apellido del usuario" ref={tReco} />
                                                                     <label for="inputNombre">Tiempo de Recolección (meses)</label>
                                                                 </div>
                                                             </div>
@@ -82,22 +130,26 @@ function CrearTCultivo(){
                                                         <div class="row mb-3">
                                                             <div class="col-md-6">
                                                                 <div class="form-floating mb-3 mb-md-0">
-                                                                    <input class="form-control" id="areaDestinada" type="text" placeholder="Ingrese el area destinada" />
+                                                                    <input class="form-control" id="areaDestinada" type="number" placeholder="Ingrese el area destinada" ref={canReco} />
                                                                     <label for="inputArea1">Kg de Recolectado por Hectarea</label>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-6">
-                                                                <div class="form-floating">
-                                                                    
+                                                                <div class="form-floating mb-3 mb-md-0">
+                                                                    <input class="form-control" id="areaDestinada" type="text" placeholder="Ingrese el area destinada" ref={tipCultivo}/>
+                                                                    <label for="inputArea1">Tipo de Cultivo</label>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        
+                                                        <Container>
                                                         <div class="btn-group" role="group" aria-label="Basic example">
-                                                            <button type="button" class="btn btn-primary" style={{marginRight: "15px",  borderRadius: "5px"}} >Crear</button>
+                                                            <button type="button" class="btn btn-primary" style={{marginRight: "15px",  borderRadius: "5px",}} onClick={guardarCultivo} >Crear</button>
+                                                            <Link to="/cultivos">
                                                             <button type="button" class="btn btn-primary" style={{marginRight: "15px",  borderRadius: "5px"}}>Ver Cultivos</button>
+                                                            </Link>
                                                             <button type="button" class="btn btn-primary" style={{borderRadius: "5px"}}>Cancelar</button>
                                                         </div>
+                                                        </Container>
                                                     </form>
                                                 </div>
                                             </div>

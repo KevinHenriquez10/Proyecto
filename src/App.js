@@ -43,6 +43,8 @@ class App extends React.Component{
         <Route path="/" element={<Home />}/>
         <Route path="/usuarios" element={<VerUsuarios />}/>
         <Route path="/administrador/registro" element={<Registro />}/>
+        <Route path="/crearCultivo" element={<CrearTCultivo />}/>
+        <Route path="/cultivos" element={<CultivosAsignados />}/>
       </Routes>
     </BrowserRouter>
     {/* <Container>

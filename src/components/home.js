@@ -10,9 +10,11 @@ function Home() {
         <>
         <Container>
         <Header />
-        <Link to="/usuarios">Usuarios </Link>
-        <Link to="/administrador/registro">Registro</Link>
         <hr></hr>
+        <Link to="/usuarios">Usuarios |</Link>
+        <Link to="/administrador/registro"> Registro |</Link>
+        <Link to="/crearCultivo"> Crear Cultivos |</Link>
+        <Link to="/cultivos"> Ver Cultivos |</Link>
         <div className="div-front">
         <Login />
         <Bienvenida />        

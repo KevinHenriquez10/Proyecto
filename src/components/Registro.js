@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import { Container } from 'reactstrap';
 import {Header} from '../components/header'
 import {Footer} from '../components/footer'
+import {Link} from 'react-router-dom';
 
 
 
@@ -29,7 +30,7 @@ function Registro () {
         const usuario = {
             "Nombre": nombre,
             "Apellido": apellido,
-            "Tipo de Documento": tipoDocumento,
+            "Tipo_de_Documento": tipoDocumento,
             "Documento": documento,
             "Email": email,
             "Telefono": telefono,
@@ -59,6 +60,7 @@ function Registro () {
     <Container>
         <Header />
         <hr></hr>
+        <Link to="/">Home</Link>
     </Container>
         <Container>
         <div className="layoutAuthentication">
@@ -88,10 +90,10 @@ function Registro () {
                                                         <div class="row mb-3">
                                                         <div class="col-md-6">
                                                                 <div class="form-floating mb-3 mb-md-0">
-                                                                <select class="form-control" id="idUsuario" type="text" placeholder="Ingrese el identificación del usuario">
-                                                                    <option value="C.C" ref={tipDocUsuario}>C.C.</option>
-                                                                    <option value="C.E" ref={tipDocUsuario}>C.E.</option>
-                                                                    <option value="NIT" ref={tipDocUsuario}>NIT.</option>
+                                                                <select class="form-control" id="idUsuario" type="text" placeholder="Ingrese el identificación del usuario" ref={tipDocUsuario}>
+                                                                    <option value="C.C" >C.C.</option>
+                                                                    <option value="C.E" >C.E.</option>
+                                                                    <option value="NIT" >NIT.</option>
                                                                 </select>
                                                                 <label for="tipoDocumento">Tipo de Documento</label>
                                                                 </div>
@@ -119,18 +121,22 @@ function Registro () {
                                                         </div>
                                                         <div class="row mb-3">
                                                             <div class="col-md-6">
-                                                                <label for="inputSexo">Sexo</label>
                                                                 <div class="form-floating mb-3">
-                                                                    <input type="radio" id="hombre" name="sexo" value="hombre" ref={sexUsuario}/> Hombre <br/> 
-                                                                    <input type="radio" id="mujer" name="sexo" value="mujer" ref={sexUsuario}/> Mujer 
+                                                                <select class="form-control" type="text" placeholder="Ingrese el sexo del usuario" ref={sexUsuario}>
+                                                                    <option value="Hombre" >Hombre</option>
+                                                                    <option value="Mujer" >Mujer</option>
+                                                                </select>
+                                                                <label for="inputSexo">Sexo</label>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-6">
-                                                                <label for="inputRol">Rol</label>
                                                                 <div class="form-floating mb-3">
-                                                                    <input type="radio" id="admin" name="rol" value="administrador" ref={rolUsuario}/> Administrador <br/> 
-                                                                    <input type="radio" id="usuarioC" name="rol" value="usuario de configuracion" ref={rolUsuario}/> Usuario de Configuración  <br/> 
-                                                                    <input type="radio" id="usuarioG" name="rol" value="usuario de gestion" ref={rolUsuario}/> Usuario de Gestión
+                                                                <select class="form-control" type="text" placeholder="Ingrese el sexo del usuario" ref={rolUsuario}>
+                                                                    <option value="Administrador" >administrador</option>
+                                                                    <option value="usuario de configuracion" >Usuario de Configuración</option>
+                                                                    <option value="usuario de gestion" >Usuario de Gestión</option>
+                                                                </select>
+                                                                <label for="inputSexo">Rol</label>
                                                                 </div>
                                                             </div>
                                                         </div>
