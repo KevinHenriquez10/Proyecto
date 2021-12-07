@@ -14,7 +14,6 @@ import { RegistroPredio } from './components/RegistroPredio';
 import { AsignacionPredio } from './components/AsignacionPredio';
 import { Administrador } from './components/Administrador';
 import { CrearTCultivo } from './components/CrearTCultivo';
-import { AsignarPermiso } from './components/AsignarPermiso';
 import { ConfiguracionParametro } from './components/ConfiguracionParametro';
 import { AsignarArea } from './components/AsignarArea';
 import { CultivosAsignados } from './components/CultivosAsignados';
@@ -57,7 +56,6 @@ class App extends React.Component{
     <VerUsuarios/>
     <EditarUsuario/>
     <Registro/>
-    <AsignarPermiso/>
     <CultivosAsignados/>
     <RegistroPredio/>
     <AsignacionPredio/>
@@ -67,7 +65,6 @@ class App extends React.Component{
     <ConfiguracionPredio/>
     <Costos/>
     <Recogida/>
-     
   </>
   );
   }

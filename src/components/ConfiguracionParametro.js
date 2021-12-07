@@ -24,44 +24,83 @@ function ConfiguracionParametro(){
                     </div>
                 </nav>
             </div>
-
-            <div><h4>Configuración de parámetros</h4></div><br/>
-            <div>
-                <label for="ValorAgua">Valor metro de agua: </label>
-                $<input type="number" placeholder="Valor metro de agua" id="valor-agua" name="ValorAgua" />
-                <br/>
-                <br/>
-                <label for="Semilla">Semilla: </label>
-                <select  aria-label="Default select example">
-                    <option selected>Seleccione semilla</option>
-                    <option value="1">Arroz</option>
-                    <option value="2">Maíz</option>
-                    <option value="2">Trigo</option>
-                </select>
-                <br/>
-                <br/>
-                <label for="ValorSemilla">Valor semilla: </label>
-                $<input type="number" placeholder="Valor semilla" id="valor-semilla" name="ValorSemilla" />
-                <br/>
-                <br/>
-                <label for="Fertilizante">Fertilizante: </label>
-                <select  aria-label="Default select example">
-                    <option selected>Seleccione fertilizante</option>
-                    <option value="1">NITRAX-S 28-4-0-6S</option>
-                    <option value="2">TRIPLE 15-15-15</option>
-                    <option value="2">NPK 10-30-10</option>
-                </select>
-                <br/>
-                <br/>
-                <label for="ValorFertilizante">Valor fertilizante: </label>
-                $<input type="number" placeholder="Valor fertilizante" id="valor-fertilizante" name="ValorFertilizante" />
-                <br/>
-                <br/>
-                <button type="button" class="btn btn-primary">Guardar</button>
-                <button type="button" class="btn btn-primary">Limpiar</button>
-                <button type="button" class="btn btn-primary">Cancelar</button>
-
-            </div>    
+            <Container>
+        <div className="layoutAuthentication">
+                        <div id="layoutAuthentication_content">
+                            <main>
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-7">
+                                            <div class="card shadow-lg border-0 rounded-lg mt-5">
+                                                <div class="card-header"><h3 class="text-center font-weight-light my-4">Configuración de Parametros</h3></div>
+                                                <div class="card-body">
+                                                    <form>
+                                                        <div class="row mb-3">
+                                                            <div class="col-md-6">
+                                                                <div class="form-floating mb-3 mb-md-0">
+                                                                    <input class="form-control" id="areaDestinada" type="text" placeholder="Ingrese el area destinada" />
+                                                                    <label for="inputArea1">Valor metro de agua</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-floating mb-3 mb-md-0">
+                                                                <select class="form-control" id="idUsuario" type="text" placeholder="Ingrese el identificación del usuario">
+                                                                    <option value="1">Arroz</option>
+                                                                    <option value="2">Maíz</option>
+                                                                    <option value="3">Trigo</option>
+                                                                </select>
+                                                                <label for="tipoDocumento">Semilla</label>
+                                                                </div>
+                                                            </div> 
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <div class="col-md-6">
+                                                                <div class="form-floating mb-3 mb-md-0">
+                                                                    <input class="form-control" id="areaDestinada" type="text" placeholder="Ingrese el area destinada" />
+                                                                    <label for="inputArea1">Valor Semilla</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-floating mb-3 mb-md-0">
+                                                                <select class="form-control" id="idUsuario" type="text" placeholder="Ingrese el identificación del usuario">
+                                                                    <option value="1">NITRAX-S 28-4-0-6S</option>
+                                                                    <option value="2">TRIPLE 15-15-15</option>
+                                                                    <option value="3">NPK 10-30-10</option>
+                                                                </select>
+                                                                <label for="tipoDocumento">Fertilizante</label>
+                                                                </div>
+                                                            </div> 
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <div class="col-md-6">
+                                                                <div class="form-floating mb-3 mb-md-0">
+                                                                    <input class="form-control" id="areaDestinada" type="text" placeholder="Ingrese el area destinada" />
+                                                                    <label for="inputArea1">Valor Fertilizante</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-floating">
+                                                                    
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="btn-group" role="group" aria-label="Basic example">
+                                                            <button type="button" class="btn btn-primary" style={{marginRight: "15px",  borderRadius: "5px"}} >Guardar</button>
+                                                            <button type="button" class="btn btn-primary" style={{marginRight: "15px",  borderRadius: "5px"}}>Limpiar</button>
+                                                            <button type="button" class="btn btn-primary" style={{borderRadius: "5px"}}>Cancelar</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </main>
+                        </div>
+                    </div>
+                    
+        </Container>   
 
             <Footer />
         </Container>

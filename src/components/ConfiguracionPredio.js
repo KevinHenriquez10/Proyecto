@@ -23,7 +23,8 @@ function ConfiguracionPredio(){
                     </div>
                 </nav>
             </div>
-
+        
+        
             <div><h4>Configuración de predio</h4></div><br/>
 
             <div>
@@ -67,57 +68,117 @@ function ConfiguracionPredio(){
             </div><hr/>
 
             <Container>
-                <label for="IdCultivo">Id cultivo: </label>
-                <input type="number" id="id-cultivo" name="IdCultivo"  />
-                <br/>
-                <br/>
-                <label htmlFor="TipoCultivo">Tipo de cultivo: </label>
-                <input type="text" id="tipo-cultivo" name="TipoCultivo" />
-                <br/>
-                <br/>
-                <label htmlFor="Producto">Producto: </label>
-                <input type="text" id="producto" name="Producto" />
-                <br/>
-                <br/>
-                <label for="AreaAsignada">Área asignada (m<sup>2</sup>): </label>
-                <input type="number" id="area-asignada" name="AreaAsignada" />
-                <br/>
-                <br/>
-                <label for="CantidadSemilla">Cantidad de semilla (kg): </label>
-                <input type="number" id="cantidad-semilla" name="CantidadSemilla" />
-                <br/>
-                <br/>
-                <label for="TiempoCultivo">Tiempo del cultivo (en semanas): </label>
-                <input type="number" id="tiempo-cultivo" name="TiempoCultivo" />
-                <br/>
-                <br/>
-                <label for="CantidadAgua">Cantidad de agua (m<sup>3</sup>): </label>
-                <input type="number" id="cantidad-agua" name="CantidadAgua" />
-                <br/>
-                <br/>
-                <label for="CantidaFertilizante">Cantidad de fertilizante por hectarea (kg): </label>
-                <input type="number" id="cantidad-fertilizante" name="CantidadFertilizante" />
-                <br/>
-                <br/>
-                <label for="KgRecogido">Kilogramos recogidos: </label>
-                <input type="number" id="kg-recogido" name="KgRecogido" />
-                <br/>
-                <br/>
-                <label for="TiempoEspera">Tiempo de espera (en semanas): </label>
-                <input type="number" id="tiempo-espera" name="TiempoEspera" />
-                <br/>
-                <br/>
-                <label for="FechaSiembra">Fecha siembra:</label>
-                <input type="date" id="fecha-siembra" name="FechaSiembra"></input>
-                <br/>
-                <br/>
-                <label for="FechaRecogida">Fecha Recogida:</label>
-                <input type="date" id="fecha-recogida" name="FechaRecogida"></input>
-                <br/>
-                <br/>
-                <button type="button" class="btn btn-primary">Guardar cambios</button>
-                <button type="button" class="btn btn-primary">Cancelar</button>
-            </Container>
+        <div className="layoutAuthentication">
+                        <div id="layoutAuthentication_content">
+                            <main>
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-7">
+                                            <div class="card shadow-lg border-0 rounded-lg mt-5">
+                                                <div class="card-body">
+                                                    <form>
+                                                    <div class="row mb-3">
+                                                            <div class="col-md-6">
+                                                                <div class="form-floating mb-3 mb-md-0">
+                                                                    <input class="form-control" id="areaDestinada" type="text" placeholder="Ingrese el area destinada" />
+                                                                    <label for="inputArea1">Id Cultivo</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-floating">
+                                                                    <input class="form-control" id="apellidoUsuario" type="text" placeholder="Ingrese el apellido del usuario" />
+                                                                    <label for="inputNombre">Tipo de Cultivo</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <div class="col-md-6">
+                                                                <div class="form-floating mb-3 mb-md-0">
+                                                                    <input class="form-control" id="areaDestinada" type="text" placeholder="Ingrese el area destinada" />
+                                                                    <label for="inputArea1">Producto</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-floating">
+                                                                    <input class="form-control" id="apellidoUsuario" type="text" placeholder="Ingrese el apellido del usuario" />
+                                                                    <label for="inputNombre">Área Asignada (m<sup>2</sup>)</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <div class="col-md-6">
+                                                                <div class="form-floating mb-3 mb-md-0">
+                                                                    <input class="form-control" id="areaDestinada" type="text" placeholder="Ingrese el area destinada" />
+                                                                    <label for="inputArea1">Cantidad de Semilla (kg)</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-floating">
+                                                                    <input class="form-control" id="apellidoUsuario" type="text" placeholder="Ingrese el apellido del usuario" />
+                                                                    <label for="inputNombre">Tiempo del Cultivo (semanas)</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <div class="col-md-6">
+                                                                <div class="form-floating mb-3 mb-md-0">
+                                                                    <input class="form-control" id="areaDestinada" type="text" placeholder="Ingrese el area destinada" />
+                                                                    <label for="inputArea1">Cantidad de Agua (m<sup>3</sup>)</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-floating">
+                                                                    <input class="form-control" id="apellidoUsuario" type="text" placeholder="Ingrese el apellido del usuario" />
+                                                                    <label for="inputNombre">Cantidad de Fertilizante por Hectarea (Kg)</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <div class="col-md-6">
+                                                                <div class="form-floating mb-3 mb-md-0">
+                                                                    <input class="form-control" id="areaDestinada" type="text" placeholder="Ingrese el area destinada" />
+                                                                    <label for="inputArea1">Kilogramos Recogidos</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-floating">
+                                                                    <input class="form-control" id="apellidoUsuario" type="text" placeholder="Ingrese el apellido del usuario" />
+                                                                    <label for="inputNombre">Tiempo de Espera (semanas)</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="row mb-3">
+                                                            <div class="col-md-6">
+                                                                <div class="form-floating mb-3 mb-md-0">
+                                                                    <input class="form-control" id="fechaNacimiento" type="date" placeholder="Ingrese la fecha de nacimiento del usuario" />
+                                                                    <label for="inputFecha">Fecha de Siembra</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-floating mb-3 mb-md-0">
+                                                                    <input class="form-control" id="fechaNacimiento" type="date" placeholder="Ingrese la fecha de nacimiento del usuario" />
+                                                                    <label for="inputFecha">Fecha de Recogida</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="btn-group" role="group" aria-label="Basic example">
+                                                            <button type="button" class="btn btn-primary" style={{marginRight: "15px",  borderRadius: "5px"}} >Guardar Cambios</button>
+                                                            <button type="button" class="btn btn-primary" style={{marginRight: "15px",  borderRadius: "5px"}} >Cancelar</button>
+
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </main>
+                        </div>
+                    </div>
+                    
+        </Container>
 
             <Footer />
         </Container>

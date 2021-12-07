@@ -78,28 +78,72 @@ function Costos(){
             <div><button type="button" class="btn btn-primary">Detalle</button></div><hr/>
 
             <Container>
-                <label for="CantidadSemilla">Cantidad de semilla (kg): </label>
-                <input type="number" id="cantidad-semilla" name="CantidadSemilla" />
-                <br/>
-                <br/>
-                <label for="ValorSemilla">Valor semilla: </label>
-                $<input type="number" id="valor-semilla" name="ValorSemilla" />
-                <br/>
-                <br/>
-                <label for="CantidaFertilizante">Cantidad fertilizante (kg): </label>
-                <input type="number" id="cantidad-fertilizante" name="CantidadFertilizante" />
-                <br/>
-                <br/>
-                <label for="ValorUnitario">Valor unitario: </label>
-                $<input type="number" id="valor-unitario" name="ValorUnitario" />
-                <br/>
-                <br/>
-                <label for="ValorAgua">Valor m<sup>3</sup> de agua: </label>
-                $<input type="number" id="valor-agua" name="ValorAgua" />
-                <br/>
-                <br/>
-                <label for="Cantidad">Cantidad: </label>
-                <input type="number" id="cantidad" name="Cantidad" />
+        <div className="layoutAuthentication">
+                        <div id="layoutAuthentication_content">
+                            <main>
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-7">
+                                            <div class="card shadow-lg border-0 rounded-lg mt-5">
+                                            
+                                                <div class="card-body">
+                                                    <form>
+                                                        <div class="row mb-3">
+                                                            <div class="col-md-6">
+                                                                <div class="form-floating mb-3 mb-md-0">
+                                                                    <input class="form-control" id="areaDestinada" type="text" placeholder="Ingrese el area destinada" />
+                                                                    <label for="inputArea1">Cantidad de Semilla (Kg)</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-floating mb-3 mb-md-0">
+                                                                    <input class="form-control" id="areaDestinada" type="text" placeholder="Ingrese el area destinada" />
+                                                                    <label for="inputArea1">Valor Semilla</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <div class="col-md-6">
+                                                                <div class="form-floating mb-3 mb-md-0">
+                                                                    <input class="form-control" id="areaDestinada" type="text" placeholder="Ingrese el area destinada" />
+                                                                    <label for="inputArea1">Cantidad Fertilizante (Kg)</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-floating mb-3 mb-md-0">
+                                                                    <input class="form-control" id="areaDestinada" type="text" placeholder="Ingrese el area destinada" />
+                                                                    <label for="inputArea1">Valor Unitario</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <div class="col-md-6">
+                                                                <div class="form-floating mb-3 mb-md-0">
+                                                                    <input class="form-control" id="areaDestinada" type="text" placeholder="Ingrese el area destinada" />
+                                                                    <label for="inputArea1">Valor (m<sup>3</sup>) de Agua</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-floating">
+                                                                <input class="form-control" id="areaDestinada" type="text" placeholder="Ingrese el area destinada" />
+                                                                    <label for="inputArea1">Cantidad</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </main>
+                        </div>
+                    </div>
+                    
+        </Container>
+            <Container>
+                
                 <br/>
                 <br/>
 

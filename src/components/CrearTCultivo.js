@@ -26,41 +26,89 @@ function CrearTCultivo(){
                 </nav>
             </div>
 
-            <div><h4>Crear tipo de cultivo</h4></div><br/>
-            <div className="div-crearTipoCultivo">
-                <label for="AreaDestinada">Área destinada:</label>
-                <input type="number" placeholder="Área destinada" id="area-destinada" name="AreaDestinada" />
-                <br/>
-                <br/>
-                <label for="CatidadSemilla">Cantidad semilla por hectarea: </label>
-                <input type="number" placeholder="Cantidad semilla por hectarea" id="cantidad-semilla" name="CatidadSemilla" />
-                <br/>
-                <br/>
-                <label for="TiempoCultivo">Tiempo del cultivo (en semanas): </label>
-                <input type="number" placeholder="Tiempo del cultivo" id="tiempo-cultivo" name="TiempoCultivo" />
-                <br/>
-                <br/>
-                <label for="CantidadAgua">Cantidad de agua(m<sup>3</sup>): </label>
-                <input type="number" placeholder="Cantidad de agua" id="cantidad-agua" name="CantidadAgua" />
-                <br/>
-                <br/>
-                <label for="KilogramoFertilizante">kilogramo de fertilizante por hectarea: </label>
-                <input type="number" placeholder="kilogramo de fertilizante por hectarea" id="kilogramo-fertilizante" name="KilogramoFertilizante" />
-                <br/>
-                <br/>
-                <label for="TiempoRecoleccion">Tiempo de recolección(en meses): </label>
-                <input type="number" placeholder="Tiempo de recolección" id="tiempo-recoleccion" name="TiempoRecoleccion" />
-                <br/>
-                <br/>
-                <label for="KilogramoRecolectado">kilogramo recolectado por hectarea: </label>
-                <input type="number" placeholder="kilogramo recolectado por hectarea" id="kilogramo-recolectado" name="KilogramoRecolectado" />
-                <br/>
-                <br/>
-                <button type="button" class="btn btn-primary">Crear</button>
-                <button type="button" class="btn btn-primary">Ver cultivos</button>
-                <button type="button" class="btn btn-primary">Cancelar</button>
-            </div>
-
+            <Container>
+        <div className="layoutAuthentication">
+                        <div id="layoutAuthentication_content">
+                            <main>
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-7">
+                                            <div class="card shadow-lg border-0 rounded-lg mt-5">
+                                                <div class="card-header"><h3 class="text-center font-weight-light my-4">Crear Tipo de Cultivo</h3></div>
+                                                <div class="card-body">
+                                                    <form>
+                                                        <div class="row mb-3">
+                                                            <div class="col-md-6">
+                                                                <div class="form-floating mb-3 mb-md-0">
+                                                                    <input class="form-control" id="areaDestinada" type="text" placeholder="Ingrese el area destinada" />
+                                                                    <label for="inputArea1">Área Destinada</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-floating">
+                                                                    <input class="form-control" id="apellidoUsuario" type="text" placeholder="Ingrese el apellido del usuario" />
+                                                                    <label for="inputNombre">Cantidad de Semilla por Hectarea</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <div class="col-md-6">
+                                                                <div class="form-floating mb-3 mb-md-0">
+                                                                    <input class="form-control" id="areaDestinada" type="text" placeholder="Ingrese el area destinada" />
+                                                                    <label for="inputArea1">Tiempo del Cultivo (semanas)</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-floating">
+                                                                    <input class="form-control" id="apellidoUsuario" type="text" placeholder="Ingrese el apellido del usuario" />
+                                                                    <label for="inputNombre">Cantidad de Agua (m<sup>3</sup>)</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <div class="col-md-6">
+                                                                <div class="form-floating mb-3 mb-md-0">
+                                                                    <input class="form-control" id="areaDestinada" type="text" placeholder="Ingrese el area destinada" />
+                                                                    <label for="inputArea1">Kg de Fertilizante por Hectarea</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-floating">
+                                                                    <input class="form-control" id="apellidoUsuario" type="text" placeholder="Ingrese el apellido del usuario" />
+                                                                    <label for="inputNombre">Tiempo de Recolección (meses)</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <div class="col-md-6">
+                                                                <div class="form-floating mb-3 mb-md-0">
+                                                                    <input class="form-control" id="areaDestinada" type="text" placeholder="Ingrese el area destinada" />
+                                                                    <label for="inputArea1">Kg de Recolectado por Hectarea</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-floating">
+                                                                    
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="btn-group" role="group" aria-label="Basic example">
+                                                            <button type="button" class="btn btn-primary" style={{marginRight: "15px",  borderRadius: "5px"}} >Crear</button>
+                                                            <button type="button" class="btn btn-primary" style={{marginRight: "15px",  borderRadius: "5px"}}>Ver Cultivos</button>
+                                                            <button type="button" class="btn btn-primary" style={{borderRadius: "5px"}}>Cancelar</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </main>
+                        </div>
+                    </div>
+                    
+        </Container>
             <Footer />
         </Container>
         </>
