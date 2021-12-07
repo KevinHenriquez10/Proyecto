@@ -1,12 +1,16 @@
 import React from 'react';
 import { Container } from 'reactstrap';
+import {Header} from '../components/header'
+import {Footer} from '../components/footer'
 
 function AsignacionPredio(){
     return(
         <>
-        <h3>Usuario de configuración</h3>
+        
         <Container>
-        <div>
+            <Header />
+            <h3>Usuario de configuración</h3>
+            <div>
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <div class="container-fluid">
                         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -20,63 +24,104 @@ function AsignacionPredio(){
                     </div>
                 </nav>
             </div>
-            
-            <div><h4>Asignación de predio</h4></div><br/>
-                <div>
-                    <label for="Buscar">Buscar: </label>
-                    <select  aria-label="Default select example">
-                        <option value="1">Código</option>
-                        <option value="2">Nombre</option>
-                    </select>
-                    <br/>
-                    <br/>
-                    <input type="text"  id="form-buscar" name="Buscar" />
-                    <br/>
-                    <br/>
-                    <button type="button" class="btn btn-primary">Buscar</button>
-                    <button type="button" class="btn btn-primary">Limpiar</button>
-                </div>
         </Container>
-
         <Container>
-            <div>
-                <h6>Realizar asignación del predio</h6>
-                <label for="Codigo">Código: </label>
-                <input type="number" placeholder="Código" id="form-registro-codigo" name="Codigo" />
-                <br/>
-                <br/>
-                <label htmlFor="NombrePredio">Nombre predio: </label>
-                <input type="text" placeholder="Nombre predio" id="form-registro-nombrePredio" name="NombrePredio" />
-                <br/>
-                <br/>
-            </div>
-            <div>
-                <label for="A">A: </label>
-                <br/>
-                <label htmlFor="Nombre">Nombre: </label>
-                <input type="text" placeholder="Nombre" id="form-registro-nombre" name="Nombre" />
-                <br/>
-                <br/>
-                <label for="Apellidos">Apellidos: </label>
-                <input type="text" placeholder="Apellidos" id="form-registro-apellidos" name="Apellidos" />
-                <br/>
-                <br/>
-                <label for="Documento">Id: </label>
-                <input type="number" placeholder="Id" id="form-registro-id" name="Id" />
-                <br/>
-                <br/>
-                <label for="Correo">Correo: </label>
-                <input type="email" placeholder="Correo" id="form-registro-correo" name="Correo" />
-                <br/>
-                <br/>
-                <label htmlFor="Direccion">Dirección: </label>
-                <input type="text" placeholder="Dirección" id="form-registro-direccion" name="Direccion" />
-                <br/>
-                <br/>
-                <button type="button" class="btn btn-primary">Asignar</button>
-                <button type="button" class="btn btn-primary">Cancelar</button>
-            </div>
+        <div className="layoutAuthentication">
+                        <div id="layoutAuthentication_content">
+                            <main>
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-7">
+                                            <div class="card shadow-lg border-0 rounded-lg mt-5">
+                                                <div class="card-header"><h3 class="text-center font-weight-light my-4">Registrar Asignación de Predio</h3></div>
+                                                <div class="card-body">
+                                                    <form>
+                                                    <div class="row mb-3">
+                                                        <div class="col-md-6">
+                                                                <div class="form-floating mb-3 mb-md-0">
+                                                                <select class="form-control" id="buscar" type="text" placeholder="Ingrese el código o nombre">
+                                                                    <option value="codigo">Código</option>
+                                                                    <option value="nombre">Nombre</option>
+                                                                </select>
+                                                                <label for="busqueda">Buscar por (Código/Nombre)</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-floating mb-3 mb-md-0">
+                                                                    <input class="form-control" id="buscar1" type="text" placeholder="Ingrese el el código o nombre" />
+                                                                    <label for="busqueda1">Escriba su busqueda</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="btn-group" role="group" aria-label="Basic example">
+                                                            <button type="button" class="btn btn-primary" style={{marginRight: "15px",  borderRadius: "5px"}} >Buscar</button>
+                                                            <button type="button" class="btn btn-primary" style={{borderRadius: "5px"}}>Limpiar</button>
+                                                        </div>
+                                                        <br/>
+                                                        <br/>
+                                                        <div class="row mb-3">
+                                                            <div class="col-md-6">
+                                                                <div class="form-floating">
+                                                                    <input class="form-control" id="codigoPredio" type="text" placeholder="Ingrese el codigo del predio" />
+                                                                    <label for="inputCodigo">Código</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-floating mb-3 mb-md-0">
+                                                                    <input class="form-control" id="nombrePredio" type="text" placeholder="Ingrese el nombre del predio" />
+                                                                    <label for="inputNombre">Nombre Predio</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <div class="col-md-6">
+                                                                <div class="form-floating mb-3 mb-md-0">
+                                                                    <input class="form-control" id="nombreUsuario" type="text" placeholder="Ingrese el nombre del usuario" />
+                                                                    <label for="inputNombre">Nombres</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-floating">
+                                                                    <input class="form-control" id="apellidoUsuario" type="text" placeholder="Ingrese el apellido del usuario" />
+                                                                    <label for="inputApellido">Apellidos</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <div class="col-md-6">
+                                                                <div class="form-floating mb-3 mb-md-0">
+                                                                    <input class="form-control" id="identificación" type="text" placeholder="Ingrese la identificación del usuario" />
+                                                                    <label for="inputId">Identificación</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-floating">
+                                                                    <input class="form-control" id="direccion" type="text" placeholder="Ingrese la direccion" />
+                                                                    <label for="inputDireccion">Dirección</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-floating mb-3">
+                                                            <input class="form-control" id="correoUsuario" type="email" placeholder="Ingrese el correo del Usuario" />
+                                                            <label for="inputEmail">Correo</label>
+                                                        </div>
+                                                        
+                                                        <div class="btn-group" role="group" aria-label="Basic example">
+                                                            <button type="button" class="btn btn-primary" style={{marginRight: "15px",  borderRadius: "5px"}} >Asignar</button>
+                                                            <button type="button" class="btn btn-primary" style={{borderRadius: "5px"}}>Cancelar</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </main>
+                        </div>
+                    </div>
         </Container>
+        <Footer />
+        
         </>
     )
 }

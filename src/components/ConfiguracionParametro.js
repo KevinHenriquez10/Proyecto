@@ -3,14 +3,13 @@ import { Container } from 'reactstrap';
 import {Header} from '../components/header'
 import {Footer} from '../components/footer'
 
-
-function RegistroPredio(){
+function ConfiguracionParametro(){
     return(
         <>
         <Container>
             <Header />
 
-            <h2>Usuario de Configuración</h2>
+            <h3>Usuario de configuración</h3>
             <div>
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <div class="container-fluid">
@@ -18,15 +17,14 @@ function RegistroPredio(){
                             <div class="navbar-nav">
                                 <a class="nav-link" href="/">Registro</a>
                                 <a class="nav-link" href="/">Asignación</a>
-                                <a class="nav-link" href="/">Crear Tipo Cultivo</a>
-                                <a class="nav-link" href="/">Configuración de Parámetros</a>  
+                                <a class="nav-link" href="/">Crear tipo cultivo</a>
+                                <a class="nav-link" href="/">Configuración de parámetros</a>  
                             </div>
                         </div>
                     </div>
                 </nav>
             </div>
-
-        <Container>
+            <Container>
         <div className="layoutAuthentication">
                         <div id="layoutAuthentication_content">
                             <main>
@@ -34,38 +32,55 @@ function RegistroPredio(){
                                     <div class="row justify-content-center">
                                         <div class="col-lg-7">
                                             <div class="card shadow-lg border-0 rounded-lg mt-5">
-                                                <div class="card-header"><h3 class="text-center font-weight-light my-4">Registrar Predio</h3></div>
+                                                <div class="card-header"><h3 class="text-center font-weight-light my-4">Configuración de Parametros</h3></div>
                                                 <div class="card-body">
                                                     <form>
-                                                        <div class="form-floating mb-3">
-                                                            <input class="form-control" id="nombrePredio" type="text" placeholder="Ingrese el nombre del predio" />
-                                                            <label for="inputNombre">Nombre Predio</label>
+                                                        <div class="row mb-3">
+                                                            <div class="col-md-6">
+                                                                <div class="form-floating mb-3 mb-md-0">
+                                                                    <input class="form-control" id="areaDestinada" type="text" placeholder="Ingrese el area destinada" />
+                                                                    <label for="inputArea1">Valor metro de agua</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-floating mb-3 mb-md-0">
+                                                                <select class="form-control" id="idUsuario" type="text" placeholder="Ingrese el identificación del usuario">
+                                                                    <option value="1">Arroz</option>
+                                                                    <option value="2">Maíz</option>
+                                                                    <option value="3">Trigo</option>
+                                                                </select>
+                                                                <label for="tipoDocumento">Semilla</label>
+                                                                </div>
+                                                            </div> 
                                                         </div>
                                                         <div class="row mb-3">
+                                                            <div class="col-md-6">
+                                                                <div class="form-floating mb-3 mb-md-0">
+                                                                    <input class="form-control" id="areaDestinada" type="text" placeholder="Ingrese el area destinada" />
+                                                                    <label for="inputArea1">Valor Semilla</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-floating mb-3 mb-md-0">
+                                                                <select class="form-control" id="idUsuario" type="text" placeholder="Ingrese el identificación del usuario">
+                                                                    <option value="1">NITRAX-S 28-4-0-6S</option>
+                                                                    <option value="2">TRIPLE 15-15-15</option>
+                                                                    <option value="3">NPK 10-30-10</option>
+                                                                </select>
+                                                                <label for="tipoDocumento">Fertilizante</label>
+                                                                </div>
+                                                            </div> 
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <div class="col-md-6">
+                                                                <div class="form-floating mb-3 mb-md-0">
+                                                                    <input class="form-control" id="areaDestinada" type="text" placeholder="Ingrese el area destinada" />
+                                                                    <label for="inputArea1">Valor Fertilizante</label>
+                                                                </div>
+                                                            </div>
                                                             <div class="col-md-6">
                                                                 <div class="form-floating">
-                                                                    <input class="form-control" id="codigoPredio" type="text" placeholder="Ingrese el codigo del predio" />
-                                                                    <label for="inputCodigo">Código</label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                                <div class="form-floating mb-3 mb-md-0">
-                                                                    <input class="form-control" id="area" type="text" placeholder="Ingrese el area" />
-                                                                    <label for="inputArea">Área</label>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row mb-3">
-                                                            <div class="col-md-6">
-                                                                <div class="form-floating mb-3 mb-md-0">
-                                                                    <input class="form-control" id="latitud" type="text" placeholder="Ingrese la latitud" />
-                                                                    <label for="inputLatitud">Latitud</label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                                <div class="form-floating mb-3 mb-md-0">
-                                                                    <input class="form-control" id="longitud" type="text" placeholder="Ingrese la longitud" />
-                                                                    <label for="inputLongitud">Longitud</label>
+                                                                    
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -75,7 +90,7 @@ function RegistroPredio(){
                                                             <button type="button" class="btn btn-primary" style={{marginRight: "15px",  borderRadius: "5px"}}>Limpiar</button>
                                                             <button type="button" class="btn btn-primary" style={{borderRadius: "5px"}}>Cancelar</button>
                                                         </div>
-                                                    </form> 
+                                                    </form>
                                                 </div>
                                             </div>
                                         </div>
@@ -84,11 +99,13 @@ function RegistroPredio(){
                             </main>
                         </div>
                     </div>
-        </Container>
+                    
+        </Container>   
+
             <Footer />
         </Container>
         </>
     )
-}
 
-export {RegistroPredio};
+}
+export{ConfiguracionParametro};

@@ -10,8 +10,13 @@ import { Bienvenida } from './components/section-Bienvenida';
 import { RegistroPredio } from './components/RegistroPredio';
 import { AsignacionPredio } from './components/AsignacionPredio';
 import { Administrador } from './components/Administrador';
-import { Home } from './components/home';
-import { BrowserRouter, Routes, Route, } from 'react-router-dom';
+import { CrearTCultivo } from './components/CrearTCultivo';
+import { ConfiguracionParametro } from './components/ConfiguracionParametro';
+import { AsignarArea } from './components/AsignarArea';
+import { CultivosAsignados } from './components/CultivosAsignados';
+import { ConfiguracionPredio } from './components/ConfiguracionPredio';
+import { Costos } from './components/Costos';
+import { Recogida } from './components/Recogida';
 const data = [
   { id: 1, tipo: "Alimentario", tiempo: "12 meses", terreno: "10 hectareas", producto: "Platano"},
   { id: 2, tipo: "Oleaginoso", tiempo: "9 meses", terreno: "100 hectareas", producto: "Girasol"},
@@ -30,18 +35,33 @@ class App extends React.Component{
   render(){
   return (
   <>
-  <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/usuarios" element={<VerUsuarios />} />
-    </Routes>
-  </BrowserRouter>
-    {/* <VerUsuarios/>
-    <Registro/>
+    <Container>
+      <Header />
+      <hr></hr>
+    </Container>
+    <Container>
+      <div className="div-front">
+        <Login />
+        <Bienvenida />        
+      </div>
+    </Container>
+    {/*<Registro />*/}
+    <Container>
+    <Footer />
+    </Container>
+    <Administrador/>
+    <VerUsuarios/>
     <EditarUsuario/>
+    <Registro/>
+    <CultivosAsignados/>
     <RegistroPredio/>
     <AsignacionPredio/>
-    <Administrador/> */}
+    <CrearTCultivo/>
+    <ConfiguracionParametro/>
+    <AsignarArea/>
+    <ConfiguracionPredio/>
+    <Costos/>
+    <Recogida/>
   </>
   );
   }
